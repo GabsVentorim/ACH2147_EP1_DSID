@@ -15,6 +15,7 @@ class Node:
         except Exception as e:
             print(f"Erro ao iniciar servidor: {e}")
 
+
     def aguardar_conexao(self):
         try:
             conexao, endereco_cliente = self.socket_servidor.accept() # Aguarda por uma conexão -> retorna dois valores
